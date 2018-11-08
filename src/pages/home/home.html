@@ -7,12 +7,34 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content class="card-background-page">
+  <ion-row class="width: 100%;" justify-content-center>
+    <ion-col col-sm-10 col-md-5 col-lg-6>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+      <ion-card (click)="configuracionElectronica()">
+        <img src="../../assets/imgs/configuracion_electronica.png">
+        <div class="card-title">Configuracion electronica</div>
+        <div class="card-subtitle">Elementos</div>
+      </ion-card>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+      <ion-card >
+        <img src="../../assets/imgs/blue.png">
+        <div class="card-title">Proximamente</div>
+        <div class="card-subtitle">bloqueado</div>
+      </ion-card>
+
+      <ion-card >
+        <img src="../../assets/imgs/dark_gray.png">
+        <div class="card-title">Proximamente</div>
+        <div class="card-subtitle">bloqueado</div>
+      </ion-card>
+
+      <ion-card>
+        <img src="../../assets/imgs/green.png">
+        <div class="card-title">Proximamente</div>
+        <div class="card-subtitle">bloqueado</div>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
 </ion-content>
